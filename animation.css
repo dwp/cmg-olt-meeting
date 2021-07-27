@@ -1,0 +1,53 @@
+#Albert {
+    height: 30vh;
+}
+
+#Tash {
+    animation: tash-wiggle 1.5s ease-in-out 1s infinite;
+    transform-origin: center;
+}
+
+#Eyebrow-left {
+    animation: brow-raise 1.5s ease-in-out 1s infinite;
+}
+
+@keyframes tash-wiggle {
+    0% {
+        transform: rotate(0);
+    }
+
+    5% {
+        transform: rotate(2deg);
+    }
+    10% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(-2deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+} 
+
+@keyframes brow-raise {
+    
+    0% {
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(-30px)
+    }
+    20% {
+        transform: translateY(0px);
+    }
+}
+
+.section {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+}
